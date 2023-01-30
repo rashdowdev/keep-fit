@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" width="100" height="50" src="images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas text-white offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title offcanvas-title-light" id="offcanvasNavbarLabel">menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#keep-fit">about us</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#services">our services</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#team">our team</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact us</a>
+                            </li>
+                            <li class="nav-item d-md-inline my-1">
+                            <a class="btn btn-sm" href="#sign-up">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <article class="banner-bkg">
+                <div class="container-xxl">
+                    <div class="banner-img">
+                        <h1>build your <br> perfect body</h1>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="wrapper">
+            <section id="keep-fit">
+                <div class="container-md">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 text-center">
+                        <img class="img-fluid" src="images/push-up.jpg" alt="push-up">
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <h2>keep fit</h2>
+                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+            </section>
+            <section id="services">
+                <div class="container-md text-center">
+                    <h3>our services</h3>
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae sunt, nihil dignissimos dicta laboriosam accusantium quas velit odio ullam?.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 my-2">
+                            <div class="box">
+                                <img class="img-fluid" src="images/bar.jpg" alt="fitness-coaching">
+                                <div class="info">
+                                    <h4> fitness training</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                    <button class="btn btn-sm"><a href="our_services#fitr">more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="box">
+                                <img class="img-fluid" src="images/yoga.jpg" alt="yoga">
+                                <div class="info">
+                                    <h4>yoga</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                    <button class="btn"><a href="our_services#fitr">more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="box">
+                                <img class="img-fluid" src="images/body-build.jpg" alt="body building">
+                                <div class="info">
+                                    <h4>body building</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                    <button class="btn"><a href="our_services#bob">more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="box">
+                                <img class="img-fluid" src="images/gym-equipments.jpg" alt="gym equipments">
+                                <div class="info">
+                                    <h4>equipments</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                    <button class="btn"><a href="our_services#eqp">more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team">
+                <div class="container-md text-center">
+                    <h3>our team</h3>
+                    <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla incidunt laboriosam sed aut laborum veritatis sunt nisi tempore dolorum repudiandae.</p>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-3 my-2 mx-2">
+                            <div class="trainer">
+                                <img  src="images/trainer2.jpg" alt="fitness coach">
+                            </div>
+                            <div class="info">
+                                <h4> tony ontana</h4>
+                                <p>weight specialist</p>
+                                <div class="links">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2 mx-2">
+                            <div class="trainer">
+                                <img class="img-fluid" src="images/trainer1.jpg" alt="fitness coach">
+                            </div>
+                            <div class="info">
+                                <h4> hanna toya</h4>
+                                <p>yoga specialist</p>
+                                <div class="links">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2 mx-2">
+                            <div class="trainer">
+                                <img class="img-fluid" src="images/trainer3.jpg" alt="fitness coach">
+                            </div>
+                            <div class="info">
+                                <h4>ola olu</h4>
+                                <p>fitness specialist</p>
+                                <div class="links">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section id="plans">
+                <div class="container-md text-center">
+                    <h3>our plans</h3>
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro voluptates accusantium quis vel laborum, magni tempore quidem delectus alias!.</p>
+                </div>
+                <div class="row my-1 justify-content-center">
+                    <div class="col-9 col-md-4 ">
+                        <div class="card my-2">
+                            <div class="card-body text-center py-2">
+                                <h4 class="card-tittle">basic</h4>
+                                <h4 class="price"><sup>N</sup>5k/<span>mo</span></h4>
+                            <p>1 month</p>
+                            <ul>
+                                <li><i class="bi bi-bookmark-check-fill"></i>weight lifting</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>yoga</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>general body fitness</li>
+                            </ul>
+                            <button class="btn btn-sm"><a href="#">more</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-4 ">
+                        <div class="card my-2">
+                            <div class="card-body text-center py-2">
+                                <h4 class="card-tittle">standard</h4>
+                                <h4 class="price"><sup>N</sup>9k/<span>mo</span></h4>
+                            <p>3 month</p>
+                            <ul>
+                                <li><i class="bi bi-bookmark-check-fill"></i>weight lifting</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>yoga</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>general body fitness</li>
+                            </ul>
+                            <button class="btn btn-sm"><a href="#">more</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-4 ">
+                        <div class="card my-2">
+                            <div class="card-body text-center py-2">
+                                <h4 class="card-tittle">premium</h4>
+                                <h4 class="price"><sup>N</sup>12k/<span>mo</span></h4>
+                            <p>6 month</p>
+                            <ul>
+                                <li><i class="bi bi-bookmark-check-fill"></i>weight lifting</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>yoga</li>
+                                <li><i class="bi bi-bookmark-check-fill"></i>general body fitness</li>
+                            </ul>
+                            <button class="btn btn-sm"><a href="#">more</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="review">
+                <div class="container-sm mt-5">
+                    <div class="text-center">
+                        <h3><i class="bi bi-stars"></i> customers' review</h3>
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, amet.</p>
+                    </div>
+                    <div class="list-group text-start">
+                        <div class="list-group-item py-2 my-1">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quae corrupti illum quo, nobis eum consequatur aperiam maiores asperiores ipsa?</p>
+                            <small>mario gonzales</small>
+                        </div>
+                        <div class="list-group-item py-2 my-1">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quae corrupti illum quo, nobis eum consequatur aperiam maiores asperiores ipsa?</p>
+                            <small>john gabriel</small>
+                        </div>
+                        <div class="list-group-item py-2 my-1">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quae corrupti illum quo, nobis eum consequatur aperiam maiores asperiores ipsa?</p>
+                            <small>omar khan</small>
+                        </div>
+                        <div class="list-group-item py-2 my-1">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quae corrupti illum quo, nobis eum consequatur aperiam maiores asperiores ipsa?</p>
+                            <small>julie powell</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container md">
+                    <div class="text-center my-4">
+                        <h3>get in touch</h3>
+                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquid soluta blanditiis modi excepturi quo.</p>
+                    </div>
+                    <row class="justify-content-center">
+                        <div class="col-md-7">
+                            <form action="#">
+                                <label for="name" class="form-label">name:
+                                </label>
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-fill"></i>
+                                    </span>
+                                    <input type="
+                                    " class="form-control" id="email" placeholder="e.g. Tony Tone">
+                                    <span class="input-group-text">
+                                        <span class="info" data-bs-toggle="tooltip" data-bs-placement="top" title="what is your name?">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <label for="email" class="form-label">email address:
+                                </label>
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                    <input type="
+                                    " class="form-control" id="email" placeholder="e.g. myemail@email.com">
+                                    <span class="input-group-text">
+                                        <span class="info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter an email address we can reach you at">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <label for="subject" class="form-label">what is your question?
+                                </label>
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-chat-right-fill"></i>
+                                    </span>
+                                    <select id="subject" class="form-select">
+                                        <option value="schedule" class="">schedule appointment</option>
+                                        <option value="about" class="" selected>more about us</option>
+                                        <option value="other" class="">other query</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-floating mt-5">
+                                    <textarea name="" id="query" class="form-control"></textarea>
+                                    <label for="query" class="fform-label">your query..
+                                    </label>
+                                </div>
+                                <div class="mb-4 text-center">
+                                    <button type="submit" class="btn btn-sm">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </row>
+                </div>
+            </section>
+        </div>
+        <section id="sign-up">
+            <div class="container-md mt-5">
+                <div class="text-center pt-4">
+                    <h3>register with us</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form action="">
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="
+                                 " class="form-control" id="email" placeholder="e.g. myemail@email.com">
+                                 <span class="input-group-text">
+                                    <span class="info" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter an email address to sign up">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                 </span>
+                            </div> 
+                            <div class="mb-4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-key-fill"></i>
+                                </span>
+                                <input type="password
+                                 " class="form-control" id="password" placeholder="enter your password">
+                                 <span class="input-group-text">
+                                    <span class="info" data-bs-toggle="tooltip"data-bs-placement="bottom" title="Enter a password to sign up">
+                                        <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                 </span>
+                            </div> 
+                            <div class="mb-4 text-center">
+                                <button type="submit" class="btn btn-sm">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <footer>
+        <div class="container-xxl mt-2">
+            <div class="row justify-content-between align-items-center">
+                <div class="col md-4">
+                    <div class="list my-2">
+                        <ul>
+                            <li><a href="sign_up#abt">about us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col md-4">
+                    <div class="lnks ">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

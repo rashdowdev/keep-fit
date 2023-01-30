@@ -1,0 +1,810 @@
+*{
+    text-decoration: none !important;
+    list-style: none;
+}
+
+body{
+    --main: #381B0D;
+    --background-color: #efe1eb;
+    --hover-color: rgb(228, 205, 228);
+    --text-color: rgba(249, 216, 159, 0.9);
+    --text-color2: #d8bfd8;
+    --star: rgb(255, 234, 0);
+    background-color: var(--background-color);
+}
+
+header .navbar-toggler{
+   box-shadow: .5px solid var(--main) !important;
+   border: none;
+}
+
+header .offcanvas-header{
+   position: relative;
+}
+
+header .btn-close{
+   position: absolute;
+   left: 90%;
+   top: 15px;
+}
+
+header .navbar{
+    background-color: var(--main);
+    z-index: 999;
+    height: 70px;
+}
+
+header .logo{
+    border-radius: 5px;
+}
+
+header .navbar-brand{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header h5{
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+header li{
+    padding: 15px;
+}
+
+header li a{
+    font-size: 16px !important;
+    color: var(--text-color) !important;
+    text-transform: capitalize;
+}
+header li a:hover{
+    color: var(--text-color2) !important;
+}
+
+header .btn{
+    width: 83px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid var(--text-color2);   
+}
+header .btn:hover{
+    background-color: rgba(244, 223, 223, 0.5);   
+}
+
+header .btn a{
+    color: var(--text-color2);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+header .offcanvas{
+    background-color: var(--main);
+}
+
+@media only screen and (min-width: 768px){
+
+header li{
+    padding: 5px;
+}
+
+header li a{
+    font-size: 14px !important;
+}
+
+header .btn{
+    width: 70px;
+    height: 27px;   
+}}
+
+.banner-bkg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+#keep-fit img{
+    border-radius: 5px;
+}
+
+#keep-fit{
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+#keep-fit h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--main);
+    margin-top: 40px;
+}
+
+#keep-fit p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 20px;
+}
+
+#services{
+    padding-top: 100px;
+}
+
+#services h3{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 3px solid var(--main) ;
+    margin-bottom: 30px;
+    display: inline-block;
+   
+}
+
+#services .p1{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 10px;
+}
+
+#services h4{
+    font-size: 30px;
+    color: var(--text-color2); 
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#services p{
+    font-size: 15px;
+    color: var(--text-color); 
+    text-transform: capitalize;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+#services .btn{
+    width: 80px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid var(--text-color2);   
+}
+#services .btn:hover{
+    background-color: rgba(244, 223, 223, 0.5);   
+}
+
+#services .btn a{
+    color: var(--text-color2);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+#services .box{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+}
+
+#services img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover center;
+    border-radius: 5px;
+}
+
+#services .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: bottom;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+    border-radius: 5px;
+}
+
+#services .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#team{
+    padding-top: 100px;
+}
+
+#team h3{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 3px solid var(--main) ;
+    margin-bottom: 30px;
+    display: inline-block;
+   
+}
+
+#team .p1{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 10px;
+   
+}
+
+#team .container-md .trainer{
+    height: 350px !important;
+    width: 100% !important;
+}
+
+#team img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+#team img:hover{
+    transform: translateY(-10px);
+    transition: 0.3s linear;
+}
+
+#team .info{
+    background-color: var(--text-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    width: 70%;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: -20px;
+    position: relative;
+}
+#team .info:hover{
+    transform: translateY(-20px);
+    transition: 0.3s linear;
+}
+
+#team h4{
+    font-size: 20px;
+    color: var(--main);
+    font-weight: 600;
+    margin: 5px 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#team p{
+    font-size: 15px;
+    color: var(--main);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#team .links{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: -5px;
+   justify-content: center;
+}
+
+#team a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 33px;
+   width: 33px;
+   background-color: var(--text-color2);
+   border-radius: 50%;
+   margin: 5px;
+}
+#team a:hover{
+    box-shadow: 0 0 5px #111;
+}
+
+#team a i{
+    font-size: 22px;
+    color: var(--main);
+}
+    
+#plans{
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+#plans .card:hover{
+    box-shadow: 1px 1px 5px var(--main);
+}
+
+#plans h3{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 3px solid var(--main) ;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+#plans .p1{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 10px;
+}
+
+#plans .card-tittle{
+    font-size: 30px;
+    color: #381B0D;
+    background-color: var(--text-color2);
+    margin-bottom: 30px;
+    padding: 20px 0;
+    text-transform: capitalize;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+#plans .price{
+    font-size: 45px;
+    color: var(--main); 
+    margin-bottom: 5px;  
+    text-transform: capitalize;
+}
+#plans .price span{
+    font-size: 25px;
+}
+
+#plans p{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--main); 
+    margin-bottom: 20px; 
+    text-transform: capitalize;
+}
+
+#plans ul{
+    margin-left: -30px;
+}
+
+#plans .bi-bookmark-check-fill {
+    margin: 0 auto;
+    color: var(--text-color2);
+    margin-right: 2px;
+}
+
+#plans li{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+#plans .btn{
+    width: 80px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 2px solid var(--text-color2);   
+}
+#plans .btn:hover{
+    background-color: rgba(244, 223, 223, 0.5);   
+}
+
+#plans .btn a{
+    color: var(--text-color2);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+#reviews{
+    padding-top: 100%;
+}
+
+#review h3{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+#review .p1{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 10px;
+}
+
+#review .stars{
+    font-size: 20px;
+    color: var(--star);
+}
+
+#review  h4{
+    font-size: 20px;
+    color: var(--main);
+}
+
+#review  .p2{
+    font-size: 15px;
+    color: var(--main);
+}
+#review  small{
+    color: #111;
+    font-weight: 750;
+    text-transform: capitalize;
+}
+    
+#contact{
+    padding-top: 100px;
+}
+
+#contact h3{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 3px solid var(--main) ;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+#contact p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--main);
+    margin-top: 10px;
+   font-weight: 500;
+}
+
+#contact label{
+   color: var(--main);
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+#contact  span i{
+    color: var(--main);
+}
+
+#contact input:focus{
+    box-shadow: none;
+    border: 1px solid var(--main);
+}
+
+#contact select{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+#contact select:focus{
+    box-shadow: none;
+    border: 1px solid var(--main);
+}
+
+#contact option{
+    background-color: var(--background-color);
+    text-transform: capitalize;
+}
+
+#contact textarea{
+    height: 150px;
+}
+#contact textarea:focus{
+    box-shadow: none;
+    border: 1px solid var(--main);
+}
+
+#contact button{
+    margin-top: 20px;
+    border: 1px solid var(--main);
+    color: var(--main);
+    text-transform: capitalize;
+}
+#contact button:hover{
+    background-color: var(--text-color);
+}
+
+@media only screen and (min-width: 768px){
+
+.banner-bkg{
+    height: 550px;
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#keep-fit img{
+    height: 280px;
+}
+
+#keep-fit p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+    
+
+#services h3{
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+#services .box{
+    height: 250px;
+}
+
+#services h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#services p{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#services .btn{
+    width: 70px;
+    height: 30px;
+    margin-top: 15; 
+}
+
+#team h3{
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+/*
+#team .container-md .trainer{
+    height: 250px !important;
+}
+
+#team .info{
+    height: 90px;
+}*/
+
+#team h4{
+    font-size: 17px;
+    margin: 4px 0;
+}
+
+#team .lead{
+    font-size: 14px;
+}
+
+#team .links{
+margin-top: -9px;
+}
+
+#team a{
+height: 30px;
+width: 30px;
+margin: 4px;
+}
+#team a:hover{
+    box-shadow: 0 0 5px #111;
+}
+
+#team a i{
+    font-size: 19px;
+    color: var(--main);
+}
+
+#plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plans h3{
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+#plans .row{
+    width: 650px;
+}
+
+#plans .card{
+    height: 330px;
+    width: 200px;
+    margin-right: -80px;
+}
+
+#plans .card-tittle{
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+#plans .price{
+    font-size: 35px;
+    margin-bottom: 4px;  
+}
+#plans .price span{
+    font-size: 20px;
+}
+
+#plans p{
+    font-size: 25px;
+    margin-bottom: 15px; 
+}
+
+#plans ul{
+    margin-left: -35px;
+}
+
+#plans li{
+    font-size: 15px;
+}
+
+#plans .btn{
+    width: 70px;
+    height: 30px; 
+}
+#plans .btn:hover{
+    background-color: rgba(244, 223, 223, 0.5);   
+}
+
+#plans .btn a{
+    color: var(--text-color2);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+#review .p1{
+    font-size: 15px;
+}
+   
+#contact h3{
+    font-size: 35px;
+}
+
+#contact .col-md-7{
+   margin: 0 auto;
+}
+
+#contact p{
+    font-size: 15px
+}}
+
+@media only screen and (min-width: 1000px){
+
+}
+
+#sign-up{
+    margin-top: 100px;
+    margin-bottom: -9px;
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/mitchelle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sign-up h3{
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#sign-up  span i{
+    color: var(--text-color);
+}
+
+#sign-up input:focus{
+    box-shadow: none;
+    border: 1px solid var(--text-color);
+}
+
+#sign-up button{
+    margin-top: 20px;
+    border: 1px solid var(--text-color2);
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+#sign-up button:hover{
+    background-color: var(--hover-color);
+}
+
+footer{
+    background-color: var(--main);
+}
+
+footer ul{
+    margin-left: -30px;
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+footer ul li a{
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+footer ul li a:hover{
+    color: var(--text-color2);
+}
+
+footer .lnks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+footer .lnks a{
+    background-color: var(--text-color2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    margin: 2px;
+    height: 25px;
+}
+
+footer .lnks a:hover{
+    box-shadow: 0 0 5px rgb(249, 216, 159); 
+    height: 25px;
+    width: 25px;
+}
+
+footer .lnks a i{
+    color: var(--main);
+    font-size: 19px;
+}
+
+@media only screen and (min-width: 768px){
+
+footer .lnks{
+    margin-left: 92%;
+}}
+
+@media only screen and (min-width: 1000px){
+
+footer .lnks{
+    margin-left: 94%;
+}}
