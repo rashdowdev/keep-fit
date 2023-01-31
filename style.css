@@ -13,25 +13,10 @@ body{
     background-color: var(--background-color);
 }
 
-header .navbar-toggler{
-   box-shadow: .5px solid var(--main) !important;
-   border: none;
-}
 
-header .offcanvas-header{
-   position: relative;
-}
-
-header .btn-close{
-   position: absolute;
-   left: 90%;
-   top: 15px;
-}
-
-header .navbar{
+header nav{
     background-color: var(--main);
     z-index: 999;
-    height: 70px;
 }
 
 header .logo{
@@ -43,13 +28,82 @@ header .navbar-brand{
     border-bottom-right-radius: 5px;
 }
 
+header nav .navbar-toggler{
+    border: 0;
+   
+ }
+
+header nav .navbar-toggler:focus,
+header nav .navbar-toggler:active,
+header nav .navbar-toggler-icon:focus{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+ }
+
+ header nav .toggler-icon{
+    width: 27px;
+    height: 3px;
+    background-color: var(--text-color);
+    display: block;
+    transition: all 0.2s;
+    margin-left: 10px;
+ }
+
+ header nav .navbar-toggler .middle-bar{
+    margin: 5px;
+ }
+
+ header nav .navbar-toggler .top-bar{
+    transform: translateY(8px) rotate(48.9deg);
+ }
+ header nav .navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+ }
+ header nav .navbar-toggler .bottom-bar{
+    transform: translateY(-8px) rotate(-48.9deg);
+ }
+
+ header nav .navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+ }
+ header nav .navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+ }
+ header nav .navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+ }
+
+ header nav .navbar-toggler .toggler-icon{
+    background-color: var(--text-color);
+ }
+
+
+ /*
+ header .offcanvas-header{
+    position: relative;
+ }
+ 
+ header .btn-close{
+    position: absolute;
+    left: 90%;
+    top: 15px;
+ }*/
+
 header h5{
     color: var(--text-color);
     text-transform: capitalize;
 }
 
+header ul{
+    width: 30%;
+    margin: 0 auto;
+}
+
 header li{
-    padding: 15px;
+    padding: 2px;
 }
 
 header li a{
@@ -64,6 +118,7 @@ header li a:hover{
 header .btn{
     width: 83px;
     height: 30px;
+    margin-top: -12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,12 +135,18 @@ header .btn a{
     font-size: 18px;
     text-transform: capitalize;
 }
-
+/*
 header .offcanvas{
     background-color: var(--main);
-}
+    margin-right: 30% !important;
+}*/
 
 @media only screen and (min-width: 768px){
+
+header ul{
+    width: 100%;
+    
+}
 
 header li{
     padding: 5px;
@@ -96,9 +157,13 @@ header li a{
 }
 
 header .btn{
-    width: 70px;
-    height: 27px;   
+      
 }}
+
+@media only screen and (min-width: 1000px){
+
+}
+}
 
 .banner-bkg{
     height: 100vh;
