@@ -30,7 +30,6 @@ header .navbar-brand{
 
 header nav .navbar-toggler{
     border: 0;
-   
  }
 
 header nav .navbar-toggler:focus,
@@ -88,6 +87,7 @@ header h5{
 header ul{
     width: 30%;
     margin: 0 auto;
+    text-align: center;
 }
 
 header li{
@@ -107,6 +107,7 @@ header .btn{
     width: 83px;
     height: 30px;
     margin-top: -12px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +129,6 @@ header .btn a{
 
 header ul{
     width: 100%;
-    
 }
 
 header li{
@@ -400,7 +400,7 @@ header .btn{
     display: inline-block;
 }
 
-#plans .p1{
+#plans .container-md .p1{
     font-size: 16px;
     text-align: center;
     color: var(--main);
@@ -428,7 +428,7 @@ header .btn{
     font-size: 25px;
 }
 
-#plans p{
+#plans .p2{
     font-size: 30px;
     font-weight: 200;
     color: var(--main); 
@@ -604,7 +604,6 @@ header .btn{
     font-size: 14px;
     word-spacing: 2px;
 }
-    
 
 #services h3{
     font-size: 35px;
@@ -636,14 +635,6 @@ header .btn{
     font-size: 35px;
     margin-bottom: 45px;
 }
-/*
-#team .container-md .trainer{
-    height: 250px !important;
-}
-
-#team .info{
-    height: 90px;
-}*/
 
 #team h4{
     font-size: 17px;
@@ -684,12 +675,8 @@ margin: 4px;
     margin-bottom: 45px;
 }
 
-#plans .row{
-    width: 650px;
-}
-
 #plans .card{
-    height: 330px;
+    height: 340px;
     width: 200px;
     margin-right: -80px;
 }
