@@ -3,7 +3,7 @@
     list-style: none;
 }
 
-body{
+body{  
     --main: #381B0D;
     --background-color: #efe1eb;
     --hover-color: rgb(228, 205, 228);
@@ -87,7 +87,10 @@ header h5{
 header ul{
     width: 30%;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header li{
@@ -107,7 +110,6 @@ header .btn{
     width: 83px;
     height: 30px;
     margin-top: -12px;
-    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,9 +128,12 @@ header .btn a{
 }
 
 @media only screen and (min-width: 768px){
-
+  
 header ul{
     width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 header li{
@@ -137,10 +142,6 @@ header li{
 
 header li a{
     font-size: 14px !important;
-}
-
-header .btn{
-      
 }}
 
 .banner-bkg{
@@ -326,9 +327,9 @@ header .btn{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
+    padding: 1px 3px;
     width: 70%;
-    height: 110px;
+    height: fit-content;
     margin: 0 auto;
     margin-top: -20px;
     position: relative;
@@ -364,13 +365,13 @@ header .btn{
 
 #team a{
    display: flex;
-   justify-content: center;
    align-items: center;
-   height: 33px;
-   width: 33px;
+   justify-content: center;
+   height: 32px !important;
+   width: 32px !important;
    background-color: var(--text-color2);
    border-radius: 50%;
-   margin: 5px;
+   margin: 5px !important;
 }
 #team a:hover{
     box-shadow: 0 0 5px #111;
@@ -379,15 +380,16 @@ header .btn{
 #team a i{
     font-size: 22px;
     color: var(--main);
+    margin-bottom: 2px !important;
 }
     
 #plans{
     padding-top: 100px;
-    overflow: hidden;
+    
 }
 
 #plans .card:hover{
-    box-shadow: 1px 1px 5px var(--main);
+    box-shadow: 1px 1px 4px var(--main);
 }
 
 #plans h3{
@@ -588,11 +590,10 @@ header .btn{
 @media only screen and (min-width: 768px){
 
 .banner-bkg{
-    height: 550px;
+    height: 450px;
 }
 
 .wrapper{
-    width: 800px;
     margin: 0 auto;
 }
 
@@ -675,12 +676,6 @@ margin: 4px;
     margin-bottom: 45px;
 }
 
-#plans .card{
-    height: 340px;
-    width: 200px;
-    margin-right: -80px;
-}
-
 #plans .card-tittle{
     margin-bottom: 20px;
     padding: 15px 0;
@@ -739,6 +734,9 @@ margin: 4px;
 
 @media only screen and (min-width: 1000px){
 
+.wrapper{
+    max-width: 800px;
+}
 }
 
 #sign-up{
